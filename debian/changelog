@@ -1,0 +1,78 @@
+libhttp-cookiejar-perl (0.012-1) unstable; urgency=medium
+
+  * Import upstream version 0.012.
+  * Drop postpone-test-expiry.patch which was taken from upstream.
+  * Update years of packaging copyright.
+  * Declare compliance with Debian Policy 4.6.0.
+
+ -- gregor herrmann <gregoa@debian.org>  Sat, 04 Sep 2021 16:23:27 +0200
+
+libhttp-cookiejar-perl (0.010-2) unstable; urgency=medium
+
+  * Team upload.
+  * add postpone-test-expiry.patch from David Golden (Closes: #991649)
+
+ -- Étienne Mollier <emollier@debian.org>  Thu, 29 Jul 2021 19:32:27 +0200
+
+libhttp-cookiejar-perl (0.010-1) unstable; urgency=medium
+
+  [ Salvatore Bonaccorso ]
+  * debian/control: Use HTTPS transport protocol for Vcs-Git URI
+
+  [ gregor herrmann ]
+  * debian/copyright: change Copyright-Format 1.0 URL to HTTPS.
+
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-* headers for switch to salsa.debian.org
+
+  [ gregor herrmann ]
+  * debian/watch: use uscan version 4.
+
+  [ Debian Janitor ]
+  * Bump debhelper from old 9 to 12.
+  * Set debhelper-compat version in Build-Depends.
+  * Set upstream metadata fields: Bug-Submit.
+  * Remove obsolete fields Contact, Name from debian/upstream/metadata
+    (already present in machine-readable debian/copyright).
+
+  [ gregor herrmann ]
+  * Import upstream version 0.010.
+  * Update years of packaging copyright.
+  * Declare compliance with Debian Policy 4.5.0.
+  * Set Rules-Requires-Root: no.
+  * Drop unneeded version constraints from (build) dependencies.
+  * Annotate test-only build dependencies with <!nocheck>.
+  * Bump debhelper-compat to 13.
+
+ -- gregor herrmann <gregoa@debian.org>  Thu, 24 Sep 2020 21:44:19 +0200
+
+libhttp-cookiejar-perl (0.008-1) unstable; urgency=medium
+
+  * Import upstream version 0.008.
+
+ -- gregor herrmann <gregoa@debian.org>  Sun, 08 Nov 2015 18:01:27 +0100
+
+libhttp-cookiejar-perl (0.007-1) unstable; urgency=medium
+
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-Browser URL to cgit web frontend
+
+  [ gregor herrmann ]
+  * Add debian/upstream/metadata.
+  * Import upstream version 0.007.
+  * Drop use_test-mocktime.patch, not needed anymore.
+    Also drop build dependency on libtest-mocktime-perl.
+  * debian/libhttp-cookiejar-perl.docs: rename file.
+  * Update years of packaging copyright. Add upstream copyright year.
+  * Mark package as autopkgtest-able.
+  * Fix typo in alternative build dependency. Thanks to cme.
+  * Declare compliance with Debian Policy 3.9.6.
+  * Bump debhelper compatibility level to 9.
+
+ -- gregor herrmann <gregoa@debian.org>  Sun, 18 Oct 2015 17:05:33 +0200
+
+libhttp-cookiejar-perl (0.006-1) unstable; urgency=low
+
+  * Initial Release. Closes: #740467
+
+ -- gregor herrmann <gregoa@debian.org>  Sun, 02 Mar 2014 00:25:04 +0100
