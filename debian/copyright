@@ -8,7 +8,7 @@ Copyright: 2013, David Golden <dagolden@cpan.org>
 License: Apache-2.0
 
 Files: debian/*
-Copyright: 2014-2021, gregor herrmann <gregoa@debian.org>
+Copyright: 2014-2023, gregor herrmann <gregoa@debian.org>
 License: Apache-2.0 or Artistic or GPL-1+
 
 License: Apache-2.0

@@ -1,3 +1,20 @@
+libhttp-cookiejar-perl (0.014-2) unstable; urgency=medium
+
+  * Add libmozilla-publicsuffix-perl as a test dependency and runtime
+    recommendation and mention it in the long description.
+  * Update years of packaging copyright.
+  * Declare compliance with Debian Policy 4.6.2.
+
+ -- gregor herrmann <gregoa@debian.org>  Mon, 07 Aug 2023 17:13:21 +0200
+
+libhttp-cookiejar-perl (0.014-1) unstable; urgency=medium
+
+  * Import upstream version 0.014.
+  * Update years of packaging copyright.
+  * Declare compliance with Debian Policy 4.6.1.
+
+ -- gregor herrmann <gregoa@debian.org>  Mon, 01 Aug 2022 19:54:25 +0200
+
 libhttp-cookiejar-perl (0.012-1) unstable; urgency=medium
 
   * Import upstream version 0.012.
