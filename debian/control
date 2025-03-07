@@ -6,13 +6,14 @@ Testsuite: autopkgtest-pkg-perl
 Priority: optional
 Build-Depends: debhelper-compat (= 13)
 Build-Depends-Indep: libhttp-date-perl <!nocheck>,
+                     libmozilla-publicsuffix-perl <!nocheck>,
                      libtest-deep-perl <!nocheck>,
                      libtest-requires-perl <!nocheck>,
                      libtest-simple-perl <!nocheck>,
                      liburi-perl <!nocheck>,
                      libwww-perl <!nocheck>,
                      perl
-Standards-Version: 4.6.0
+Standards-Version: 4.6.2
 Vcs-Browser: https://salsa.debian.org/perl-team/modules/packages/libhttp-cookiejar-perl
 Vcs-Git: https://salsa.debian.org/perl-team/modules/packages/libhttp-cookiejar-perl.git
 Homepage: https://metacpan.org/release/HTTP-CookieJar
@@ -23,6 +24,7 @@ Architecture: all
 Depends: ${misc:Depends},
          ${perl:Depends},
          libhttp-date-perl
+Recommends: libmozilla-publicsuffix-perl
 Description: minimalist HTTP user agent cookie jar
  HTTP::CookieJar implements a minimalist HTTP user agent cookie jar in
  conformance with RFC 6265|http://tools.ietf.org/html/rfc6265.
@@ -30,3 +32,7 @@ Description: minimalist HTTP user agent cookie jar
  Unlike the commonly used HTTP::Cookies module, this module does not require
  use of HTTP::Request and HTTP::Response objects. An LWP-compatible adapter is
  available as HTTP::CookieJar::LWP.
+ .
+ If Mozilla::PublicSuffix (packaged as libmozilla-publicsuffix-perl) is
+ installed, cookie domains will be checked against the public suffix list.
+ Public suffix cookies are only allowed as host-only cookies.
